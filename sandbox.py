@@ -17,13 +17,26 @@ def projection(Vx, Vy):
 
 
 #in apparent wind relative coordinates
-def get_total_force(angle_sail, Va):
-    if angle_sail < np.pi/8:
-        lift, drag = 0, 0
+
+#need update here!
+# 1. function f(angle) -> matrix
+# 2. matrix*Va = total_force
+# 3. projection(total_force, Vb) ~ boat acceleration
+
+def get_total_force(angle_wind_sail, Va):
+    drag = Va
+    lift = rotate(Va, np.pi/2)
+    if angle_wind_sail < np.pi/8:
+        lift *= 0 
+        drag *= 0
     else:
-        drag = angle_sail
-        lift = sin(2*angle_sail)
+        drag *= angle_wind_sail
+        lift *= np.sin(2*angle_wind_sail)
 
-    return = (lift + drag) * Va
+    return lift + drag
 
 
+print(get_total_force(np.pi/3, np.array([1,0])))
+
+    
+    
