@@ -5,5 +5,4 @@
 4. Step 2: ...
 5. Step: 3: Profit
 
-
-![alt tag](http://s27.postimg.org/thljit96r/IMG_20160110_162258_hdr_edit.jpg =200x)
+<img src="http://s27.postimg.org/thljit96r/IMG_20160110_162258_hdr_edit.jpg" width="200px" height="200px" />
