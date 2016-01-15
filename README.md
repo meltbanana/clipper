@@ -6,4 +6,4 @@
 5. Step: 3: Profit
 
 
-[[http://s27.postimg.org/thljit96r/IMG_20160110_162258_hdr_edit.jpg]]
+![alt tag](http://s27.postimg.org/thljit96r/IMG_20160110_162258_hdr_edit.jpg)
